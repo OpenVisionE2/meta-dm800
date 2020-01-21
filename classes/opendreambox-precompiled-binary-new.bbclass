@@ -3,7 +3,6 @@ PRECOMPILED_NAME ?= "${PN}"
 PRECOMPILED_ARCH ?= "${PACKAGE_ARCH}"
 PRECOMPILED_VERSION ?= "${PV}"
 DMMUPDATE_VERSION ?= "2.5.0"
-DMMUPDATE_VERSION_dreamone ?= "2.6.0"
 PRECOMPILED_URI ?= "http://dreamboxupdate.com/download/opendreambox/${DMMUPDATE_VERSION}/${@precompiledPath(d)};name=${PRECOMPILED_ARCH}"
 
 SRC_URI += "${PRECOMPILED_URI}"
@@ -33,5 +32,3 @@ do_install() {
 
 INHIBIT_PACKAGE_STRIP = "1"
 INHIBIT_SYSROOT_STRIP = "1"
-
-INSANE_SKIP_${PN}_append = " already-stripped"
