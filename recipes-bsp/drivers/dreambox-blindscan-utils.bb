@@ -22,4 +22,3 @@ do_install() {
 }
 
 INHIBIT_PACKAGE_STRIP = "1"
-PACKAGE_ARCH = "${MACHINE_ARCH}"
